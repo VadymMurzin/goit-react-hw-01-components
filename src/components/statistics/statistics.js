@@ -1,6 +1,6 @@
-import css from "./statistics.module.css";
-import PropTypes from "prop-types";
-import { getRandomColor } from "components/utils/getRandomColor";
+import css from './statistics.module.css';
+import PropTypes from 'prop-types';
+import { getRandomColor } from 'utils/getRandomColor';
 
 export default function Statistics({ title, stats }) {
   return (
@@ -24,7 +24,7 @@ export default function Statistics({ title, stats }) {
 }
 
 Statistics.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   stats: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
